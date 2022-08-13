@@ -1,14 +1,20 @@
-// console.log('hellow world');
 
-
-
-
-
+//? Array Sortcut
 export let RandomArray = (URandom) => URandom[Math.floor(Math.random() * URandom.length)]
-// export let randomArray = userAgent[Math.floor(Math.random() * userAgent.length)];
-// const data = [1, 2, 3, 4, 5, 6]
-
-// console.log(RandomArray(data));
 
 
-// export default RandomArray
+
+
+
+//! Testing Functions
+export let LoopTest = (int) => {
+  let start = new Date().getDate()
+  for (let i = 0; i <= int; i++) {
+    console.log(i);
+  }
+
+  let end = new Date().getTime()
+  console.log('Start:', start);
+  console.log('end:', end);
+  console.log('milsec:', (end - start));
+}
